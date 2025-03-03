@@ -2,6 +2,7 @@ package keeper
 
 import (
 	"context"
+	"fmt"
 	"time"
 
 	metrics "github.com/armon/go-metrics"
@@ -29,12 +30,11 @@ var _ types.MsgServer = msgServer{}
 // CreateValidator defines a method for creating a new validator
 func (k msgServer) CreateValidator(goCtx context.Context, msg *types.MsgCreateValidator) (*types.MsgCreateValidatorResponse, error) {
 	ctx := sdk.UnwrapSDKContext(goCtx)
-
 	valAddr, err := sdk.ValAddressFromBech32(msg.ValidatorAddress)
 	if err != nil {
 		return nil, err
 	}
-
+	fmt.Printf("CreateValidator valAddr %s \n", valAddr)
 	if msg.Commission.Rate.LT(k.MinCommissionRate(ctx)) {
 		return nil, sdkerrors.Wrapf(types.ErrCommissionLTMinRate, "cannot set validator commission=%s to less than minimum rate of %s", msg.Commission.Rate, k.MinCommissionRate(ctx))
 	}
@@ -48,12 +48,14 @@ func (k msgServer) CreateValidator(goCtx context.Context, msg *types.MsgCreateVa
 	if !ok {
 		return nil, sdkerrors.Wrapf(sdkerrors.ErrInvalidType, "Expecting cryptotypes.PubKey, got %T", pk)
 	}
-
+	fmt.Printf("CreateValidator pk %s \n", pk)
+	fmt.Printf("CreateValidator GetConsAddress %s \n", sdk.GetConsAddress(pk))
 	if _, found := k.GetValidatorByConsAddr(ctx, sdk.GetConsAddress(pk)); found {
 		return nil, types.ErrValidatorPubKeyExists
 	}
 
 	bondDenom := k.BondDenom(ctx)
+	fmt.Printf("CreateValidator bondDenom %s \n", bondDenom)
 	if msg.Value.Denom != bondDenom {
 		return nil, sdkerrors.Wrapf(
 			sdkerrors.ErrInvalidRequest, "invalid coin denomination: got %s, expected %s", msg.Value.Denom, bondDenom,
