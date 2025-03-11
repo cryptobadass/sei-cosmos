@@ -301,7 +301,7 @@ func NewBaseApp(
 	app.runTxRecoveryMiddleware = newDefaultRecoveryMiddleware()
 	app.ChainID = cast.ToString(appOpts.Get(FlagChainID))
 	if app.ChainID == "" {
-		panic("must pass --chain-id when calling 'seid start' or set in ~/.sei/config/client.toml")
+		panic("must pass --chain-id when calling 'seid start' or set in ~/.plume/config/client.toml")
 	}
 	app.startCompactionRoutine(db)
 

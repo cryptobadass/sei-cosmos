@@ -55,7 +55,7 @@ func (k msgServer) CreateValidator(goCtx context.Context, msg *types.MsgCreateVa
 	}
 
 	bondDenom := k.BondDenom(ctx)
-	fmt.Printf("CreateValidator bondDenom %s \n", bondDenom)
+	fmt.Printf("CreateValidator bondDenom %s  msg.Value.Denom: %s \n", bondDenom, msg.Value.Denom)
 	if msg.Value.Denom != bondDenom {
 		return nil, sdkerrors.Wrapf(
 			sdkerrors.ErrInvalidRequest, "invalid coin denomination: got %s, expected %s", msg.Value.Denom, bondDenom,
