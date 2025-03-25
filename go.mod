@@ -195,10 +195,10 @@ replace (
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.7.0
 	github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
-	github.com/sei-protocol/sei-db => github.com/sei-protocol/sei-db v0.0.46
+	github.com/sei-protocol/sei-db => github.com/cryptobadass/plume-db v0.0.47-0.20250325114239-f272e75bcdd0
 	// Latest goleveldb is broken, we have to stick to this version
 	github.com/syndtr/goleveldb => github.com/syndtr/goleveldb v1.0.1-0.20210819022825-2ae1ddf74ef7
-	github.com/tendermint/tendermint => github.com/cryptobadass/sei-tendermint v0.4.7-0.20250310235802-e9b26df5b5be
+	github.com/tendermint/tendermint => github.com/cryptobadass/plume-tendermint v0.4.7-0.20250325133817-b9cdbd7a56b9
 	// latest grpc doesn't work with with our modified proto compiler, so we need to enforce
 	// the following version across all dependencies.
 	google.golang.org/grpc => google.golang.org/grpc v1.33.2

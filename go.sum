@@ -250,8 +250,10 @@ github.com/creachadair/taskgroup v0.3.2 h1:zlfutDS+5XG40AOxcHDSThxKzns8Tnr9jnr6V
 github.com/creachadair/taskgroup v0.3.2/go.mod h1:wieWwecHVzsidg2CsUnFinW1faVN4+kq+TDlRJQ0Wbk=
 github.com/creack/pty v1.1.7/go.mod h1:lj5s0c3V2DBrqTV7llrYr5NG6My20zk30Fl46Y7DoTY=
 github.com/creack/pty v1.1.9/go.mod h1:oKZEueFk5CKHvIhNR5MUki03XCEU+Q6VDXinZuGJ33E=
-github.com/cryptobadass/sei-tendermint v0.4.7-0.20250310235802-e9b26df5b5be h1:wHMNUeqsQ4fEVPeL0PF3Df2qX1XnC1kLBGxx2Qwe1tY=
-github.com/cryptobadass/sei-tendermint v0.4.7-0.20250310235802-e9b26df5b5be/go.mod h1:4LSlJdhl3nf3OmohliwRNUFLOB1XWlrmSodrIP7fLh4=
+github.com/cryptobadass/plume-db v0.0.47-0.20250325114239-f272e75bcdd0 h1:NiofSXPlLCbXQqOgmdeCaiBfLV14Lcjz+kHgL7tT+2M=
+github.com/cryptobadass/plume-db v0.0.47-0.20250325114239-f272e75bcdd0/go.mod h1:m5g7p0QeAS3dNJHIl28zQpzOgxQmvYqPb7t4hwgIOCA=
+github.com/cryptobadass/plume-tendermint v0.4.7-0.20250325133817-b9cdbd7a56b9 h1:JD68RyIk8XOfVqKWNdRGPJIL9wIMoQS4CNMdHK1XxBo=
+github.com/cryptobadass/plume-tendermint v0.4.7-0.20250325133817-b9cdbd7a56b9/go.mod h1:4LSlJdhl3nf3OmohliwRNUFLOB1XWlrmSodrIP7fLh4=
 github.com/cyberdelia/templates v0.0.0-20141128023046-ca7fffd4298c/go.mod h1:GyV+0YP4qX0UQ7r2MoYZ+AvYDp12OF5yg4q8rGnyNh4=
 github.com/danieljoos/wincred v1.0.2/go.mod h1:SnuYRW9lp1oJrZX/dXJqr0cPK5gYXqx3EJbmjhLdK9U=
 github.com/danieljoos/wincred v1.1.2 h1:QLdCxFs1/Yl4zduvBdcHB8goaYk9RARS2SgLLRuAyr0=
@@ -969,8 +971,6 @@ github.com/sean-/seed v0.0.0-20170313163322-e2103e2c3529/go.mod h1:DxrIzT+xaE7yg
 github.com/segmentio/fasthash v1.0.3/go.mod h1:waKX8l2N8yckOgmSsXJi7x1ZfdKZ4x7KRMzBtS3oedY=
 github.com/sei-protocol/go-ethereum v1.13.5-sei-21 h1:uzBquo71kOMs2bZjmYsiDQb7t5VpksYzOHnpGGQNaIU=
 github.com/sei-protocol/go-ethereum v1.13.5-sei-21/go.mod h1:kcRZmuzRn1lVejiFNTz4l4W7imnpq1bDAnuKS/RyhbQ=
-github.com/sei-protocol/sei-db v0.0.46 h1:naXfSp1I3UgJJm/iSvXpdFzr9nofEOxp/EekcAVj7wY=
-github.com/sei-protocol/sei-db v0.0.46/go.mod h1:m5g7p0QeAS3dNJHIl28zQpzOgxQmvYqPb7t4hwgIOCA=
 github.com/sei-protocol/sei-iavl v0.1.9 h1:y4mVYftxLNRs6533zl7N0/Ch+CzRQc04JDfHolIxgBE=
 github.com/sei-protocol/sei-iavl v0.1.9/go.mod h1:7PfkEVT5dcoQE+s/9KWdoXJ8VVVP1QpYYPLdxlkSXFk=
 github.com/sei-protocol/sei-tm-db v0.0.5 h1:3WONKdSXEqdZZeLuWYfK5hP37TJpfaUa13vAyAlvaQY=
