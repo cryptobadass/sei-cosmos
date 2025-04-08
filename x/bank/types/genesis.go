@@ -84,10 +84,10 @@ func getTotalSupply(genState *GenesisState) (sdk.Coins, error) {
 	return totalSupply, nil
 }
 
-var OneUseiInWei sdk.Int = sdk.NewInt(1_000_000_000_000)
+var OneUplumeInWei sdk.Int = sdk.NewInt(1_000_000_000_000)
 
 func SplitUplumeWeiAmount(amt sdk.Int) (sdk.Int, sdk.Int) {
-	return amt.Quo(OneUseiInWei), amt.Mod(OneUseiInWei)
+	return amt.Quo(OneUplumeInWei), amt.Mod(OneUplumeInWei)
 }
 
 // NewGenesisState creates a new genesis state.
