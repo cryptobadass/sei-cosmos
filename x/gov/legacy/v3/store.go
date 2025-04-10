@@ -5,7 +5,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/gov/types"
 )
 
-// If expedited, the deposit to enter voting period will be increased to 5000 usei.
+// If expedited, the deposit to enter voting period will be increased to 5000 uplume.
 // The expedited proposal will have 24 hours to achieve
 // a two-thirds quorum of all voting power participation
 // a two-thirds majority of all staked voting power voting YES.

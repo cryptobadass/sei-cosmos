@@ -69,17 +69,17 @@ func getTotalSupply(genState *GenesisState) (sdk.Coins, error) {
 	for _, weiBalance := range genState.WeiBalances {
 		totalWeiBalance = totalWeiBalance.Add(weiBalance.Amount)
 	}
-	weiInUsei, weiRemainder := SplitUplumeWeiAmount(totalWeiBalance)
+	weiInUplume, weiRemainder := SplitUplumeWeiAmount(totalWeiBalance)
 	if !weiRemainder.IsZero() {
 		return nil, fmt.Errorf("non-zero wei remainder %s", weiRemainder)
 	}
 	baseDenom, err := sdk.GetBaseDenom()
 	if err != nil {
-		if !weiInUsei.IsZero() {
-			return nil, fmt.Errorf("base denom is not registered %s yet there exists wei balance %s", err, weiInUsei)
+		if !weiInUplume.IsZero() {
+			return nil, fmt.Errorf("base denom is not registered %s yet there exists wei balance %s", err, weiInUplume)
 		}
 	} else {
-		totalSupply = totalSupply.Add(sdk.NewCoin(baseDenom, weiInUsei))
+		totalSupply = totalSupply.Add(sdk.NewCoin(baseDenom, weiInUplume))
 	}
 	return totalSupply, nil
 }

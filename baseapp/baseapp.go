@@ -1098,7 +1098,7 @@ func (app *BaseApp) runMsgs(ctx sdk.Context, msgs []sdk.Msg, mode runTxMode) (*s
 			msgResult, err = handler(msgCtx, msg)
 			eventMsgName = sdk.MsgTypeURL(msg)
 			metrics.MeasureSinceWithLabels(
-				[]string{"sei", "cosmos", "run", "msg", "latency"},
+				[]string{"plume", "cosmos", "run", "msg", "latency"},
 				startTime,
 				[]metrics.Label{{Name: "type", Value: eventMsgName}},
 			)

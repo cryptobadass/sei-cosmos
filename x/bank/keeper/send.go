@@ -359,17 +359,17 @@ func (k BaseSendKeeper) SubWei(ctx sdk.Context, addr sdk.AccAddress, amt sdk.Int
 	}()
 	currentWeiBalance := k.GetWeiBalance(ctx, addr)
 	if amt.LTE(currentWeiBalance) {
-		// no need to change usei balance
+		// no need to change uplume balance
 		return k.setWeiBalance(ctx, addr, currentWeiBalance.Sub(amt))
 	}
-	currentUseiBalance := k.GetBalance(ctx, addr, sdk.MustGetBaseDenom()).Amount
-	currentAggregatedBalance := currentUseiBalance.Mul(OneUplumeInWei).Add(currentWeiBalance)
+	currentUplumeBalance := k.GetBalance(ctx, addr, sdk.MustGetBaseDenom()).Amount
+	currentAggregatedBalance := currentUplumeBalance.Mul(OneUplumeInWei).Add(currentWeiBalance)
 	postAggregatedbalance := currentAggregatedBalance.Sub(amt)
 	if postAggregatedbalance.IsNegative() {
 		return sdkerrors.Wrapf(sdkerrors.ErrInsufficientFunds, "%swei is smaller than %swei", currentAggregatedBalance, amt)
 	}
-	useiBalance, weiBalance := SplitUplumeWeiAmount(postAggregatedbalance)
-	if err := k.setBalance(ctx, addr, sdk.NewCoin(sdk.MustGetBaseDenom(), useiBalance), true); err != nil {
+	uplumeBalance, weiBalance := SplitUplumeWeiAmount(postAggregatedbalance)
+	if err := k.setBalance(ctx, addr, sdk.NewCoin(sdk.MustGetBaseDenom(), uplumeBalance), true); err != nil {
 		return err
 	}
 	return k.setWeiBalance(ctx, addr, weiBalance)
@@ -392,12 +392,12 @@ func (k BaseSendKeeper) AddWei(ctx sdk.Context, addr sdk.AccAddress, amt sdk.Int
 	currentWeiBalance := k.GetWeiBalance(ctx, addr)
 	postWeiBalance := currentWeiBalance.Add(amt)
 	if postWeiBalance.LT(OneUplumeInWei) {
-		// no need to change usei balance
+		// no need to change uplume balance
 		return k.setWeiBalance(ctx, addr, postWeiBalance)
 	}
-	currentUseiBalance := k.GetBalance(ctx, addr, sdk.MustGetBaseDenom()).Amount
-	useiCredit, weiBalance := SplitUplumeWeiAmount(postWeiBalance)
-	if err := k.setBalance(ctx, addr, sdk.NewCoin(sdk.MustGetBaseDenom(), currentUseiBalance.Add(useiCredit)), true); err != nil {
+	currentUplumeBalance := k.GetBalance(ctx, addr, sdk.MustGetBaseDenom()).Amount
+	uplumeCredit, weiBalance := SplitUplumeWeiAmount(postWeiBalance)
+	if err := k.setBalance(ctx, addr, sdk.NewCoin(sdk.MustGetBaseDenom(), currentUplumeBalance.Add(uplumeCredit)), true); err != nil {
 		return err
 	}
 	return k.setWeiBalance(ctx, addr, weiBalance)
