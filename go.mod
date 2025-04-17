@@ -195,7 +195,7 @@ replace (
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.7.0
 	github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
-	github.com/sei-protocol/sei-db => github.com/cryptobadass/plume-db v0.0.47-0.20250326031753-cf3940fff9fe
+	github.com/sei-protocol/sei-db => github.com/cryptobadass/plume-db vplume-1.1
 	// Latest goleveldb is broken, we have to stick to this version
 	github.com/syndtr/goleveldb => github.com/syndtr/goleveldb v1.0.1-0.20210819022825-2ae1ddf74ef7
 	github.com/tendermint/tendermint => github.com/cryptobadass/plume-tendermint v0.4.7-0.20250325133817-b9cdbd7a56b9
