@@ -7,7 +7,7 @@ import (
 	"os"
 	"text/template"
 
-	"github.com/sei-protocol/sei-db/config"
+	"github.com/plume-protocol/plume-db/config"
 	"github.com/spf13/viper"
 )
 
