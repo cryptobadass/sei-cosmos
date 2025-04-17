@@ -249,6 +249,8 @@ github.com/cryptobadass/plume-db v0.0.47-0.20250417011440-3c2ca436b774 h1:NOzyZr
 github.com/cryptobadass/plume-db v0.0.47-0.20250417011440-3c2ca436b774/go.mod h1:+ZgKUipWaMVmiC3ip4H86FCf79QgqjiIfL1Wi2daxDM=
 github.com/cryptobadass/plume-tendermint v0.4.7-0.20250325133817-b9cdbd7a56b9 h1:JD68RyIk8XOfVqKWNdRGPJIL9wIMoQS4CNMdHK1XxBo=
 github.com/cryptobadass/plume-tendermint v0.4.7-0.20250325133817-b9cdbd7a56b9/go.mod h1:4LSlJdhl3nf3OmohliwRNUFLOB1XWlrmSodrIP7fLh4=
+github.com/cryptobadass/plume-tm-db v1.0.0 h1:OtsRTMmKskeqR5w28gybFlH1Rg6rvevhTETSuB6wf1c=
+github.com/cryptobadass/plume-tm-db v1.0.0/go.mod h1:aNd/y5l86Ymnvt+2JoalyhhsqBeY01iAJTNt6SQFgMs=
 github.com/cyberdelia/templates v0.0.0-20141128023046-ca7fffd4298c/go.mod h1:GyV+0YP4qX0UQ7r2MoYZ+AvYDp12OF5yg4q8rGnyNh4=
 github.com/danieljoos/wincred v1.0.2/go.mod h1:SnuYRW9lp1oJrZX/dXJqr0cPK5gYXqx3EJbmjhLdK9U=
 github.com/danieljoos/wincred v1.1.2 h1:QLdCxFs1/Yl4zduvBdcHB8goaYk9RARS2SgLLRuAyr0=
@@ -955,8 +957,6 @@ github.com/sei-protocol/go-ethereum v1.13.5-sei-21 h1:uzBquo71kOMs2bZjmYsiDQb7t5
 github.com/sei-protocol/go-ethereum v1.13.5-sei-21/go.mod h1:kcRZmuzRn1lVejiFNTz4l4W7imnpq1bDAnuKS/RyhbQ=
 github.com/sei-protocol/sei-iavl v0.1.9 h1:y4mVYftxLNRs6533zl7N0/Ch+CzRQc04JDfHolIxgBE=
 github.com/sei-protocol/sei-iavl v0.1.9/go.mod h1:7PfkEVT5dcoQE+s/9KWdoXJ8VVVP1QpYYPLdxlkSXFk=
-github.com/sei-protocol/sei-tm-db v0.0.5 h1:3WONKdSXEqdZZeLuWYfK5hP37TJpfaUa13vAyAlvaQY=
-github.com/sei-protocol/sei-tm-db v0.0.5/go.mod h1:Cpa6rGyczgthq7/0pI31jys2Fw0Nfrc+/jKdP1prVqY=
 github.com/sergi/go-diff v1.1.0/go.mod h1:STckp+ISIX8hZLjrqAeVduY0gWCT9IjLuqbuNXdaHfM=
 github.com/shirou/gopsutil v3.21.4-0.20210419000835-c7a38de76ee5+incompatible h1:Bn1aCHHRnjv4Bl16T8rcaFjYSrGrIZvpiGO6P3Q4GpU=
 github.com/shirou/gopsutil v3.21.4-0.20210419000835-c7a38de76ee5+incompatible/go.mod h1:5b4v6he4MtMOwMlS0TUMTu2PcXUg8+E1lC7eC3UO/RA=
