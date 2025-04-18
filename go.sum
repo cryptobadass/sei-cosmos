@@ -245,6 +245,8 @@ github.com/creachadair/taskgroup v0.3.2 h1:zlfutDS+5XG40AOxcHDSThxKzns8Tnr9jnr6V
 github.com/creachadair/taskgroup v0.3.2/go.mod h1:wieWwecHVzsidg2CsUnFinW1faVN4+kq+TDlRJQ0Wbk=
 github.com/creack/pty v1.1.7/go.mod h1:lj5s0c3V2DBrqTV7llrYr5NG6My20zk30Fl46Y7DoTY=
 github.com/creack/pty v1.1.9/go.mod h1:oKZEueFk5CKHvIhNR5MUki03XCEU+Q6VDXinZuGJ33E=
+github.com/cryptobadass/go-ethereum v1.0.0 h1:uN6YFuV6iOwsoepeEVJ6xaFkpB48RkH5ZTyLYgBWeuY=
+github.com/cryptobadass/go-ethereum v1.0.0/go.mod h1:kcRZmuzRn1lVejiFNTz4l4W7imnpq1bDAnuKS/RyhbQ=
 github.com/cryptobadass/plume-db v0.0.47-0.20250417011440-3c2ca436b774 h1:NOzyZrObgdabW+Qah6omm7H8x+b49fMsLiuv5v/6/es=
 github.com/cryptobadass/plume-db v0.0.47-0.20250417011440-3c2ca436b774/go.mod h1:+ZgKUipWaMVmiC3ip4H86FCf79QgqjiIfL1Wi2daxDM=
 github.com/cryptobadass/plume-iavl v1.0.1 h1:Y74TyBe0W/66P3NKFUEj4/RbczE9n7fRCnEbRt7+XGs=
@@ -955,8 +957,6 @@ github.com/savaki/jq v0.0.0-20161209013833-0e6baecebbf8/go.mod h1:Nw/CCOXNyF5JDd
 github.com/sclevine/agouti v3.0.0+incompatible/go.mod h1:b4WX9W9L1sfQKXeJf1mUTLZKJ48R1S7H23Ji7oFO5Bw=
 github.com/sean-/seed v0.0.0-20170313163322-e2103e2c3529/go.mod h1:DxrIzT+xaE7yg65j358z/aeFdxmN0P9QXhEzd20vsDc=
 github.com/segmentio/fasthash v1.0.3/go.mod h1:waKX8l2N8yckOgmSsXJi7x1ZfdKZ4x7KRMzBtS3oedY=
-github.com/sei-protocol/go-ethereum v1.13.5-sei-21 h1:uzBquo71kOMs2bZjmYsiDQb7t5VpksYzOHnpGGQNaIU=
-github.com/sei-protocol/go-ethereum v1.13.5-sei-21/go.mod h1:kcRZmuzRn1lVejiFNTz4l4W7imnpq1bDAnuKS/RyhbQ=
 github.com/sergi/go-diff v1.1.0/go.mod h1:STckp+ISIX8hZLjrqAeVduY0gWCT9IjLuqbuNXdaHfM=
 github.com/shirou/gopsutil v3.21.4-0.20210419000835-c7a38de76ee5+incompatible h1:Bn1aCHHRnjv4Bl16T8rcaFjYSrGrIZvpiGO6P3Q4GpU=
 github.com/shirou/gopsutil v3.21.4-0.20210419000835-c7a38de76ee5+incompatible/go.mod h1:5b4v6he4MtMOwMlS0TUMTu2PcXUg8+E1lC7eC3UO/RA=
